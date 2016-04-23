@@ -1,0 +1,14 @@
+<!--
+ This view could have the ng-controller = "MyController" as optional
+ because normally this is configure previously in the app.config 
+ where you tell the route what controller and view to use
+<div ng-controller="MainController">-->
+
+<div>
+  {{ countdown }}
+  <form name="searchUser" ng-submit="search(username)">
+    <input type="search" required="" placeholder="Username To Find" ng-model="username" />
+    <!--  <input type="submit" value="search" ng-click="search(username)"> -->
+    <input type="submit" value="search" />
+  </form>
+</div>
